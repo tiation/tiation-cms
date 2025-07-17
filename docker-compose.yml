@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://tiation_user:tiation_password@db:5432/tiation_cms
+      - JWT_SECRET=your-jwt-secret-key
+      - SWAGGER_ENABLED=true
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+    networks:
+      - tiation-network
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=tiation_cms
+      - POSTGRES_USER=tiation_user
+      - POSTGRES_PASSWORD=tiation_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - tiation-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - tiation-network
+
+  # Optional: Admin interface (React app)
+  admin:
+    build: ./admin
+    ports:
+      - "3001:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:3000/api/v1
+    depends_on:
+      - app
+    networks:
+      - tiation-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  tiation-network:
+    driver: bridge
