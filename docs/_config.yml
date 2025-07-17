@@ -5,7 +5,7 @@ baseurl: /tiation-cms
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: tiation/tiation-github-pages-theme
 plugins:
   - jekyll-feed
   - jekyll-sitemap
