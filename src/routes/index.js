@@ -14,7 +14,7 @@ const swaggerOptions = {
       description: 'Enterprise-grade headless CMS API for industry-specific content management',
       contact: {
         name: 'Tiation Team',
-        email: 'support@tiation.com',
+        email: 'tiatheone@protonmail.com',
       },
     },
     servers: [
