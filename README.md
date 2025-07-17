@@ -41,7 +41,7 @@ Tiation CMS is a simplified, enterprise-grade headless content management system
 
 ```bash
 # Clone the repository
-git clone https://github.com/tiaastor/tiation-cms.git
+git clone https://github.com/tiation/tiation-cms.git
 cd tiation-cms
 
 # Install dependencies
@@ -204,7 +204,7 @@ npm run test:e2e
 ## Support
 
 For support and questions:
-- Create an issue on [GitHub Issues](https://github.com/tiaastor/tiation-cms/issues)
+- Create an issue on [GitHub Issues](https://github.com/tiation/tiation-cms/issues)
 - Check the [Documentation](./docs/)
 - Contact: [tiatheone@protonmail.com](mailto:tiatheone@protonmail.com)
 
@@ -220,4 +220,4 @@ See [CHANGELOG.md](CHANGELOG.md) for version history and updates.
 
 **Built with ❤️ by the Tiation Team**
 
-[Live Demo](https://tiation-cms-demo.com) | [Documentation](https://docs.tiation-cms.com) | [GitHub](https://github.com/tiaastor/tiation-cms)
+[Live Demo](https://tiation-cms-demo.com) | [Documentation](https://docs.tiation-cms.com) | [GitHub](https://github.com/tiation/tiation-cms)

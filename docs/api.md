@@ -89,7 +89,7 @@ User login endpoint.
 **Request Body:**
 ```json
 {
-  "email": "user@example.com",
+  "email": "tiatheone@protonmail.com",
   "password": "password123"
 }
 ```
@@ -100,7 +100,7 @@ User login endpoint.
   "token": "jwt-token-here",
   "user": {
     "id": 1,
-    "email": "user@example.com",
+    "email": "tiatheone@protonmail.com",
     "role": "admin"
   }
 }
