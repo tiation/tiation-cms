@@ -106,6 +106,8 @@ This CMS is specifically designed for [INDUSTRY_VERTICAL] with features includin
 
 API documentation is available at `/docs/api` when running the development server.
 
+![CMS Screenshot](./docs/images/cms-screenshot.jpg)
+
 ### Key Endpoints
 
 - `GET /api/content` - Retrieve content items
