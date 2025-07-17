@@ -1,0 +1,38 @@
+title: Tiation CMS
+description: Enterprise-grade headless CMS for industry-specific content management
+url: https://yourusername.github.io/tiation-cms
+baseurl: /tiation-cms
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Site settings
+author:
+  name: Tiation Team
+  email: support@tiation.com
+
+# GitHub Pages settings
+repository: yourusername/tiation-cms
+
+# Navigation
+header_pages:
+  - index.md
+  - api.md
+  - user-guide.md
+  - development.md
+  - deployment.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
