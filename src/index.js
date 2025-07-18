@@ -12,6 +12,9 @@ const database = require('./config/database');
 const routes = require('./routes');
 const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
+// Import models to ensure they're registered
+require('./models');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -77,7 +80,7 @@ const startServer = async () => {
 
     // Sync database models
     if (process.env.NODE_ENV === 'development') {
-      await database.sync({ alter: true });
+      await database.sync({ force: true });
       logger.info('Database models synchronized');
     }
 

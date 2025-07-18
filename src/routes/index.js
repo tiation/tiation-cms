@@ -53,15 +53,14 @@ router.get('/health', (req, res) => {
 });
 
 // Import route modules
-// TODO: Uncomment as you implement these routes
-// const authRoutes = require('./auth');
-// const contentRoutes = require('./content');
+const authRoutes = require('./auth');
+const contentRoutes = require('./content');
 // const userRoutes = require('./users');
 // const uploadRoutes = require('./upload');
 
 // Register routes
-// router.use('/auth', authRoutes);
-// router.use('/content', contentRoutes);
+router.use('/auth', authRoutes);
+router.use('/content', contentRoutes);
 // router.use('/users', userRoutes);
 // router.use('/upload', uploadRoutes);
 
