@@ -1,164 +1,254 @@
-# Tiation CMS
-*Enterprise-grade headless CMS for industry-specific content management*
+# Project Name
 
-## About
+<!-- Hero Image with Dark Neon Theme -->
+<div align="center">
+  <img src=".screenshots/hero-banner.png" alt="Project Hero Banner" width="100%">
+</div>
 
-Tiation CMS is a simplified, enterprise-grade headless content management system designed for specific industry verticals. Built with scalability, flexibility, and ease of use in mind, it provides a robust foundation for content-driven applications.
+<div align="center">
+  
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-00D9FF?style=for-the-badge&logo=github&logoColor=white)](https://tiaastor.github.io/tiation-cms)
+[![Documentation](https://img.shields.io/badge/Documentation-Complete-00FF88?style=for-the-badge&logo=gitbook&logoColor=white)](https://github.com/TiaAstor/tiation-cms/wiki)
+[![License](https://img.shields.io/badge/License-MIT-FF0080?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
-## Key Features
+</div>
 
-- **Headless Architecture**: Decouple content management from presentation
-- **Industry-Specific**: Tailored for specific vertical requirements
-- **Enterprise-Grade**: Built for scale with security and performance in mind
-- **API-First**: RESTful API for seamless integration
-- **User-Friendly**: Intuitive admin interface for content management
-- **Extensible**: Modular architecture for custom functionality
+## 🚀 About
 
-## Architecture
+**Brief, compelling description of what this project does and why it matters.**
 
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Admin Panel   │    │   Content API   │    │   Frontend App  │
-│   (React/Vue)   │◄──►│   (Node.js)     │◄──►│   (Any Tech)    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │    Database     │
-                       │  (PostgreSQL)   │
-                       └─────────────────┘
-```
+<div align="center">
+  <img src=".screenshots/demo-overview.png" alt="Project Overview" width="80%">
+</div>
 
-## Quick Start
+---
+
+## ✨ Features
+
+<!-- Feature showcase with screenshots -->
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🎯 Key Feature 1</h3>
+      <img src=".screenshots/feature-1.png" alt="Feature 1 Screenshot" width="100%">
+      <p>Description of feature 1 with benefits</p>
+    </td>
+    <td width="50%">
+      <h3>⚡ Key Feature 2</h3>
+      <img src=".screenshots/feature-2.png" alt="Feature 2 Screenshot" width="100%">
+      <p>Description of feature 2 with benefits</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🔥 Key Feature 3</h3>
+      <img src=".screenshots/feature-3.png" alt="Feature 3 Screenshot" width="100%">
+      <p>Description of feature 3 with benefits</p>
+    </td>
+    <td width="50%">
+      <h3>🌟 Key Feature 4</h3>
+      <img src=".screenshots/feature-4.png" alt="Feature 4 Screenshot" width="100%">
+      <p>Description of feature 4 with benefits</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎨 Live Demo
+
+<div align="center">
+  <a href="https://tiaastor.github.io/tiation-cms" target="_blank">
+    <img src=".screenshots/demo-preview.png" alt="Live Demo Preview" width="80%">
+  </a>
+  <br>
+  <a href="https://tiaastor.github.io/tiation-cms" target="_blank">
+    <img src="https://img.shields.io/badge/🔗%20View%20Live%20Demo-00D9FF?style=for-the-badge&logo=github&logoColor=white" alt="View Live Demo">
+  </a>
+</div>
+
+---
+
+## 🏗️ Architecture
+
+<div align="center">
+  <img src=".screenshots/architecture-diagram.png" alt="Architecture Diagram" width="90%">
+</div>
+
+### System Components
+
+- **Component 1**: Description and purpose
+- **Component 2**: Description and purpose
+- **Component 3**: Description and purpose
+
+---
+
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js 18+ and npm
-- PostgreSQL 13+
-- Git
+```bash
+# List prerequisites here
+node --version  # >= 18.0.0
+npm --version   # >= 8.0.0
+```
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/tiation/tiation-cms.git
+git clone https://github.com/TiaAstor/tiation-cms.git
 cd tiation-cms
 
 # Install dependencies
 npm install
 
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your configuration
-
-# Initialize database
-npm run db:init
-
 # Start development server
 npm run dev
 ```
 
-### Development
+### Development Workflow
 
-```bash
-# Start the development server
-npm run dev
+<div align="center">
+  <img src=".screenshots/development-workflow.png" alt="Development Workflow" width="70%">
+</div>
 
-# Run tests
-npm test
+---
 
-# Build for production
-npm run build
+## 📱 Screenshots
 
-# Start production server
-npm start
-```
+### Desktop Interface
 
-## Project Structure
+<div align="center">
+  <img src=".screenshots/desktop-interface.png" alt="Desktop Interface" width="100%">
+</div>
 
-```
-tiation-cms/
-├── src/
-│   ├── api/          # API routes and controllers
-│   ├── models/       # Database models
-│   ├── middleware/   # Express middleware
-│   ├── services/     # Business logic
-│   └── utils/        # Utility functions
-├── admin/            # Admin panel frontend
-├── docs/             # Documentation
-├── tests/            # Test files
-├── scripts/          # Build and deployment scripts
-├── config/           # Configuration files
-└── README.md
-```
+### Mobile Interface
 
-## Industry Vertical Focus
+<div align="center">
+  <img src=".screenshots/mobile-interface.png" alt="Mobile Interface" width="60%">
+</div>
 
-This CMS is specifically designed for [INDUSTRY_VERTICAL] with features including:
+### Dark Theme
 
-- Custom content types for industry-specific needs
-- Workflow management for content approval processes
-- Integration with industry-standard tools
-- Compliance and security features
-- Analytics and reporting dashboards
+<div align="center">
+  <img src=".screenshots/dark-theme.png" alt="Dark Theme Interface" width="100%">
+</div>
 
-## API Documentation
+---
 
-API documentation is available at `/docs/api` when running the development server.
+## 🛠️ Technology Stack
 
-![CMS Screenshot](./docs/images/cms-screenshot.jpg)
+<div align="center">
+  <img src=".screenshots/tech-stack.png" alt="Technology Stack" width="80%">
+</div>
 
-### Key Endpoints
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Express
+- **Database**: PostgreSQL
+- **Deployment**: Docker, GitHub Actions
 
-- `GET /api/content` - Retrieve content items
-- `POST /api/content` - Create new content
-- `PUT /api/content/:id` - Update content
-- `DELETE /api/content/:id` - Delete content
-- `GET /api/users` - User management
-- `POST /api/auth/login` - Authentication
+---
 
-## Configuration
+## 📊 Performance Metrics
 
-Configuration is managed through environment variables:
+<div align="center">
+  <img src=".screenshots/performance-metrics.png" alt="Performance Metrics" width="90%">
+</div>
+
+---
+
+## 🔧 Configuration
+
+### Environment Variables
 
 ```env
-# Database
-DATABASE_URL=postgresql://user:password@localhost:5432/tiation_cms
-
-# Server
-PORT=3000
+# Copy to .env.local
 NODE_ENV=development
-
-# Authentication
-JWT_SECRET=your-jwt-secret
-JWT_EXPIRES_IN=24h
-
-# File Storage
-STORAGE_PROVIDER=local
-UPLOAD_PATH=./uploads
+DATABASE_URL=postgresql://username:password@localhost:5432/database
+API_KEY=your-api-key-here
 ```
 
-## Security Features
+### Configuration Screenshots
 
-- JWT-based authentication
-- Role-based access control (RBAC)
-- Input validation and sanitization
-- SQL injection prevention
-- XSS protection
-- CSRF protection
-- Rate limiting
+<div align="center">
+  <img src=".screenshots/configuration-setup.png" alt="Configuration Setup" width="70%">
+</div>
 
-## Deployment
+---
 
-### Docker Deployment
+## 📚 Documentation
+
+<div align="center">
+  <a href="https://github.com/TiaAstor/tiation-cms/wiki" target="_blank">
+    <img src=".screenshots/documentation-preview.png" alt="Documentation Preview" width="80%">
+  </a>
+  <br>
+  <a href="https://github.com/TiaAstor/tiation-cms/wiki" target="_blank">
+    <img src="https://img.shields.io/badge/📖%20Full%20Documentation-00FF88?style=for-the-badge&logo=gitbook&logoColor=white" alt="Full Documentation">
+  </a>
+</div>
+
+### Quick Links
+
+- [📘 User Guide](docs/user-guide.md)
+- [🔧 API Reference](docs/api-reference.md)
+- [🏗️ Architecture Guide](docs/architecture.md)
+- [🚀 Deployment Guide](docs/deployment.md)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+<div align="center">
+  <img src=".screenshots/contribution-workflow.png" alt="Contribution Workflow" width="70%">
+</div>
+
+### Development Setup
 
 ```bash
-# Build Docker image
-docker build -t tiation-cms .
+# Fork the repository
+git clone https://github.com/your-username/tiation-cms.git
+cd tiation-cms
 
-# Run with Docker Compose
-docker-compose up -d
+# Create feature branch
+git checkout -b feature/amazing-feature
+
+# Make changes and commit
+git commit -m "Add amazing feature"
+
+# Push to branch
+git push origin feature/amazing-feature
 ```
+
+---
+
+## 🧪 Testing
+
+<div align="center">
+  <img src=".screenshots/testing-dashboard.png" alt="Testing Dashboard" width="80%">
+</div>
+
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage
+npm run test:coverage
+
+# Run end-to-end tests
+npm run test:e2e
+```
+
+---
+
+## 🚀 Deployment
+
+<div align="center">
+  <img src=".screenshots/deployment-pipeline.png" alt="Deployment Pipeline" width="90%">
+</div>
 
 ### Production Deployment
 
@@ -166,58 +256,63 @@ docker-compose up -d
 # Build for production
 npm run build
 
-# Start production server
-npm start
+# Deploy to GitHub Pages
+npm run deploy
 ```
-
-## Testing
-
-```bash
-# Run all tests
-npm test
-
-# Run with coverage
-npm run test:coverage
-
-# Run integration tests
-npm run test:integration
-
-# Run end-to-end tests
-npm run test:e2e
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## Documentation
-
-- [API Documentation](./docs/api.md)
-- [User Guide](./docs/user-guide.md)
-- [Development Guide](./docs/development.md)
-- [Deployment Guide](./docs/deployment.md)
-
-## Support
-
-For support and questions:
-- Create an issue on [GitHub Issues](https://github.com/tiation/tiation-cms/issues)
-- Check the [Documentation](./docs/)
-- Contact: [tiatheone@protonmail.com](mailto:tiatheone@protonmail.com)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for version history and updates.
 
 ---
 
-**Built with ❤️ by the Tiation Team**
+## 📈 Roadmap
 
-[Live Demo](https://tiation-cms-demo.com) | [Documentation](https://docs.tiation-cms.com) | [GitHub](https://github.com/tiation/tiation-cms)
+<div align="center">
+  <img src=".screenshots/roadmap.png" alt="Project Roadmap" width="90%">
+</div>
+
+- [x] Core functionality
+- [x] Dark theme implementation
+- [ ] Mobile app version
+- [ ] Advanced analytics
+- [ ] Third-party integrations
+
+---
+
+## 📞 Support
+
+<div align="center">
+  <img src=".screenshots/support-channels.png" alt="Support Channels" width="70%">
+</div>
+
+- 📧 **Email**: [support@example.com](mailto:support@example.com)
+- 💬 **Discord**: [Join our community](https://discord.gg/example)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/TiaAstor/tiation-cms/issues)
+- 📖 **Wiki**: [Documentation](https://github.com/TiaAstor/tiation-cms/wiki)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Acknowledgments
+
+<div align="center">
+  <img src=".screenshots/acknowledgments.png" alt="Acknowledgments" width="60%">
+</div>
+
+- Thanks to all contributors
+- Special thanks to the open-source community
+- Inspired by modern development practices
+
+---
+
+<div align="center">
+  <img src=".screenshots/footer-banner.png" alt="Footer Banner" width="100%">
+  
+  **⭐ Star this repository if you find it helpful! ⭐**
+  
+  <a href="https://github.com/TiaAstor/tiation-cms">
+    <img src="https://img.shields.io/github/stars/TiaAstor/tiation-cms?style=social&label=Star&maxAge=2592000" alt="GitHub Stars">
+  </a>
+</div>
