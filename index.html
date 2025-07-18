@@ -28,8 +28,69 @@ title: "Home"
             line-height: 1.6;
         }
         
+        .main-nav {
+            background: var(--card-background);
+            border-bottom: 1px solid var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 217, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-brand a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateY(-1px);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 80%;
+        }
+        
         .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+background: radial-gradient(circle, var(--primary-color) 0%, var(--accent-color) 50%);
             padding: 4rem 2rem;
             text-align: center;
             margin-bottom: 2rem;
@@ -70,7 +131,7 @@ title: "Home"
         }
         
         .feature-card:hover {
-            transform: translateY(-5px);
+transform: scale(1.05);
             box-shadow: 0 5px 30px rgba(0, 217, 255, 0.2);
         }
         
@@ -113,6 +174,60 @@ title: "Home"
             border-top: 1px solid var(--primary-color);
         }
         
+        .interactive-demo {
+            background: var(--card-background);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 0 30px rgba(0, 217, 255, 0.1);
+        }
+        
+        .interactive-demo h3 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .demo-simulator {
+            background: var(--background-color);
+            border-radius: 12px;
+            padding: 2rem;
+            min-height: 300px;
+            border: 1px solid var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .demo-simulator::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 49%, rgba(0, 217, 255, 0.1) 50%, transparent 51%);
+            background-size: 20px 20px;
+            animation: matrix 20s linear infinite;
+        }
+        
+        @keyframes matrix {
+            0% { background-position: 0 0; }
+            100% { background-position: 20px 20px; }
+        }
+        
+        .demo-simulator p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            text-align: center;
+        }
+        
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -126,14 +241,29 @@ title: "Home"
     </style>
 </head>
 <body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+            </div>
+            <div class="nav-menu">
+                <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
+                <a href="{{ site.baseurl }}/features.html" class="nav-link">Features</a>
+                <a href="{{ site.baseurl }}/about.html" class="nav-link">About</a>
+                <a href="{{ site.baseurl }}/demo.html" class="nav-link">Demo</a>
+                <a href="{{ site.repository }}" class="nav-link">GitHub</a>
+            </div>
+        </div>
+    </nav>
+    
     <div class="hero">
         <h1>{{ site.title }}</h1>
         <p>{{ site.description }}</p>
         <div class="cta-buttons">
-            <a href="#documentation" class="cta-button">
-                📚 Documentation
+            <a href="{{ site.baseurl }}/features.html" class="cta-button">
+                📚 Features
             </a>
-            <a href="#demo" class="cta-button">
+            <a href="{{ site.baseurl }}/demo.html" class="cta-button">
                 🚀 Live Demo
             </a>
             <a href="{{ site.repository }}" class="cta-button">
@@ -162,6 +292,13 @@ title: "Home"
             </div>
         </div>
         
+<div id="interactive-demo" class="interactive-demo">
+            <h3>🧩 Interactive Features</h3>
+            <div class="demo-simulator">
+                <p>Explore interactive elements and features within our CMS. Click around to interact!</p>
+            </div>
+        </div>
+
         <div id="documentation">
             {{ content }}
         </div>

@@ -1,5 +1,5 @@
-title: tiation-cms
-description: Enterprise-grade solution with dark neon theme
+title: Tiation CMS
+description: Enterprise-grade headless CMS for industry-specific content management
 url: "https://tiaastor.github.io"
 baseurl: "/tiation-cms"
 theme: minima
@@ -7,5 +7,13 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-author: Tiation
+author:
+  name: Tiation
+  email: tiatheone@protonmail.com
 github_username: tiaastor
+repository: "https://github.com/tiaastor/tiation-cms"
+markdown: kramdown
+highlighter: rouge
+future: false
+show_excerpts: true
+show_dir_listing: true
