@@ -8,7 +8,7 @@ title: "Home"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
+    <title>Tiation CMS - Enterprise Headless Content Management</title>
     <style>
         :root {
             --primary-color: #00D9FF;
@@ -19,141 +19,125 @@ title: "Home"
             --text-color: #FFFFFF;
         }
         
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             background: var(--background-color);
             color: var(--text-color);
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
             line-height: 1.6;
+            overflow-x: hidden;
         }
         
-        .main-nav {
-            background: var(--card-background);
-            border-bottom: 1px solid var(--primary-color);
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0, 217, 255, 0.1);
-        }
-        
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .nav-brand a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
-        }
-        
-        .nav-menu {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        
-        .nav-link {
-            color: var(--text-color);
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .nav-link:hover {
-            color: var(--primary-color);
-            background: rgba(0, 217, 255, 0.1);
-            transform: translateY(-1px);
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
-        }
-        
-        .nav-link:hover::after {
-            width: 80%;
-        }
-        
-        .hero {
-background: radial-gradient(circle, var(--primary-color) 0%, var(--accent-color) 50%);
+        .hero-section {
+            background: linear-gradient(135deg, var(--background-color) 0%, #1F2937 100%);
             padding: 4rem 2rem;
             text-align: center;
-            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
         }
         
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
         }
         
-        .hero p {
-            font-size: 1.2rem;
-            margin: 1rem 0;
-            opacity: 0.9;
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
         }
         
-        .container {
+        .hero-content {
+            position: relative;
+            z-index: 2;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
         }
         
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
+        .ecosystem-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: var(--background-color);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
         
-        .feature-card {
-            background: var(--card-background);
-            padding: 2rem;
-            border-radius: 10px;
-            border: 1px solid var(--primary-color);
-            box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
-            transition: transform 0.3s ease;
+        .ecosystem-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
         }
         
-        .feature-card:hover {
-transform: scale(1.05);
-            box-shadow: 0 5px 30px rgba(0, 217, 255, 0.2);
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
         }
         
-        .feature-card h3 {
-            color: var(--primary-color);
-            margin-top: 0;
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
         }
         
-        .cta-buttons {
+        .hero-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .badge-row {
             display: flex;
             gap: 1rem;
             justify-content: center;
+            flex-wrap: wrap;
             margin: 2rem 0;
+        }
+        
+        .badge {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        
+        .badge:hover {
+            transform: translateY(-2px);
+        }
+        
+        .cta-section {
+            margin: 3rem 0;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
             flex-wrap: wrap;
         }
         
         .cta-button {
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: var(--background-color);
             text-decoration: none;
             padding: 1rem 2rem;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
             transition: all 0.3s ease;
             display: inline-flex;
@@ -162,42 +146,109 @@ transform: scale(1.05);
         }
         
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 217, 255, 0.4);
         }
         
-        .footer {
-            background: var(--card-background);
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 2rem;
+        }
+        
+        .features-section {
+            padding: 4rem 0;
             text-align: center;
-            margin-top: 4rem;
-            border-top: 1px solid var(--primary-color);
         }
         
-        .interactive-demo {
-            background: var(--card-background);
-            border-radius: 15px;
-            padding: 2rem;
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
             margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: var(--card-background);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
+        }
+        
+        .feature-card:hover::before {
+            opacity: 0.1;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-section {
+            background: var(--card-background);
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 4rem 0;
+            text-align: center;
             border: 2px solid var(--primary-color);
             box-shadow: 0 0 30px rgba(0, 217, 255, 0.1);
         }
         
-        .interactive-demo h3 {
-            color: var(--primary-color);
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-        
         .demo-simulator {
             background: var(--background-color);
-            border-radius: 12px;
-            padding: 2rem;
-            min-height: 300px;
-            border: 1px solid var(--primary-color);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 2rem 0;
             position: relative;
             overflow: hidden;
+            min-height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -210,7 +261,7 @@ transform: scale(1.05);
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, transparent 49%, rgba(0, 217, 255, 0.1) 50%, transparent 51%);
+            background: linear-gradient(45deg, transparent 49%, rgba(0, 217, 255, 0.05) 50%, transparent 51%);
             background-size: 20px 20px;
             animation: matrix 20s linear infinite;
         }
@@ -220,93 +271,245 @@ transform: scale(1.05);
             100% { background-position: 20px 20px; }
         }
         
-        .demo-simulator p {
+        .demo-content {
             position: relative;
-            z-index: 1;
-            font-size: 1.1rem;
-            color: var(--text-color);
+            z-index: 2;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
             text-align: center;
+            padding: 1rem;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+        
+        .footer {
+            background: var(--card-background);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid var(--primary-color);
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: var(--secondary-color);
+            transform: translateY(-2px);
         }
         
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
+            .hero-title {
+                font-size: 2.5rem;
             }
             
-            .cta-buttons {
+            .badge-row {
                 flex-direction: column;
                 align-items: center;
+            }
+            
+            .cta-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="ecosystem-badge">
+                🔮 TIATION ECOSYSTEM - tiation_cms
             </div>
-            <div class="nav-menu">
-                <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
-                <a href="{{ site.baseurl }}/features.html" class="nav-link">Features</a>
-                <a href="{{ site.baseurl }}/about.html" class="nav-link">About</a>
-                <a href="{{ site.baseurl }}/demo.html" class="nav-link">Demo</a>
-                <a href="{{ site.repository }}" class="nav-link">GitHub</a>
+            
+            <h1 class="hero-title">Tiation CMS</h1>
+            <p class="hero-subtitle">Enterprise-grade headless CMS for industry-specific content management</p>
+            <p class="hero-description">
+                <em>Multi-Tenant • API-First • Enterprise</em>
+            </p>
+            
+            <div class="badge-row">
+                <a href="https://github.com/tiation/tiation-cms" class="badge">
+                    <img src="https://img.shields.io/badge/📝_CMS-Multi_Tenant-FF00FF?style=flat-square&labelColor=0A0A0A" alt="Multi-Tenant CMS">
+                </a>
+                <a href="https://github.com/tiation/tiation-cms" class="badge">
+                    <img src="https://img.shields.io/badge/🔌_API-RESTful-00FFFF?style=flat-square&labelColor=0A0A0A" alt="RESTful API">
+                </a>
+                <a href="https://github.com/tiation/tiation-cms" class="badge">
+                    <img src="https://img.shields.io/badge/💼_Enterprise-Scalable-007FFF?style=flat-square&labelColor=0A0A0A" alt="Enterprise Scalable">
+                </a>
+                <a href="https://github.com/tiation/tiation-cms" class="badge">
+                    <img src="https://img.shields.io/badge/📊_Analytics-Built_In-00FFFF?style=flat-square&labelColor=0A0A0A" alt="Built-in Analytics">
+                </a>
             </div>
-        </div>
-    </nav>
-    
-    <div class="hero">
-        <h1>{{ site.title }}</h1>
-        <p>{{ site.description }}</p>
-        <div class="cta-buttons">
-            <a href="{{ site.baseurl }}/features.html" class="cta-button">
-                📚 Features
-            </a>
-            <a href="{{ site.baseurl }}/demo.html" class="cta-button">
-                🚀 Live Demo
-            </a>
-            <a href="{{ site.repository }}" class="cta-button">
-                💻 GitHub
-            </a>
+            
+            <div class="cta-section">
+                <a href="https://tiation.github.io/tiation-cms/demo.html" class="cta-button">
+                    🚀 Live Demo
+                </a>
+                <a href="https://tiation.github.io/tiation-cms/features.html" class="cta-button">
+                    📚 Features
+                </a>
+                <a href="https://github.com/tiation/tiation-cms" class="cta-button">
+                    💻 GitHub
+                </a>
+            </div>
+            
+            <div class="badge-row">
+                <a href="https://tiation.github.io/tiation-cms" class="badge">
+                    <img src="https://img.shields.io/badge/GitHub%20Pages-Live-00D9FF?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages Live">
+                </a>
+                <a href="https://github.com/tiation/tiation-cms/wiki" class="badge">
+                    <img src="https://img.shields.io/badge/Documentation-Complete-00FF88?style=for-the-badge&logo=gitbook&logoColor=white" alt="Documentation Complete">
+                </a>
+                <a href="https://github.com/tiation/tiation-cms" class="badge">
+                    <img src="https://img.shields.io/badge/Enterprise-Ready-FF0080?style=for-the-badge&logo=shield&logoColor=white" alt="Enterprise Ready">
+                </a>
+            </div>
         </div>
     </div>
-    
+
     <div class="container">
-        <div class="features">
-            <div class="feature-card">
-                <h3>🎯 Enterprise Grade</h3>
-                <p>Professional solution built with enterprise standards and best practices in mind.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🔒 Secure & Reliable</h3>
-                <p>Security-first approach with comprehensive testing and validation.</p>
-            </div>
-            <div class="feature-card">
-                <h3>⚡ High Performance</h3>
-                <p>Optimized for speed and efficiency with modern development practices.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🎨 Dark Neon Theme</h3>
-                <p>Beautiful dark interface with cyan gradient flares for modern aesthetics.</p>
+        <div class="features-section">
+            <h2 class="section-title">✨ Key Features</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">API-First Architecture</h3>
+                    <p>RESTful and GraphQL APIs with OpenAPI documentation, webhook support, and real-time sync capabilities</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Multi-Tenant SaaS</h3>
+                    <p>Isolated tenant environments with custom domains, branded interfaces, and enterprise-grade security</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3 class="feature-title">Enterprise Management</h3>
+                    <p>Advanced analytics, user management, role-based access control, and comprehensive audit trails</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3 class="feature-title">Managed Hosting</h3>
+                    <p>Auto-scaling infrastructure, CDN integration, database backups, and 99.9% uptime SLA</p>
+                </div>
             </div>
         </div>
         
-<div id="interactive-demo" class="interactive-demo">
-            <h3>🧩 Interactive Features</h3>
+        <div class="demo-section">
+            <h2 class="section-title">🎨 Live Demo Environment</h2>
             <div class="demo-simulator">
-                <p>Explore interactive elements and features within our CMS. Click around to interact!</p>
+                <div class="demo-content">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">🔮 Interactive CMS Demo</h3>
+                    <p style="margin-bottom: 2rem;">Experience the power of Tiation CMS with our interactive demonstration</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1,337</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Scalability</div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://tiation.github.io/tiation-cms/demo.html" class="cta-button">
+                        🚀 Launch Interactive Demo
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div id="documentation">
-            {{ content }}
+        
+        <div class="features-section">
+            <h2 class="section-title">💼 Business Model</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Managed Hosting</h3>
+                    <p>$29-$299/month subscription tiers with scalable infrastructure and enterprise support</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏢</div>
+                    <h3 class="feature-title">Enterprise Packages</h3>
+                    <p>Custom development and implementation services for large organizations</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Revenue Potential</h3>
+                    <p>$30K-$150K/year per client with 6-8 weeks implementation timeline</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Quick Implementation</h3>
+                    <p>Rapid deployment and configuration for immediate revenue generation</p>
+                </div>
+            </div>
         </div>
     </div>
-    
+
     <div class="footer">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
-        <p>Built with ❤️ using Jekyll and GitHub Pages</p>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://tiation.github.io/tiation-cms" class="footer-link">Home</a>
+                <a href="https://tiation.github.io/tiation-cms/features.html" class="footer-link">Features</a>
+                <a href="https://tiation.github.io/tiation-cms/about.html" class="footer-link">About</a>
+                <a href="https://tiation.github.io/tiation-cms/demo.html" class="footer-link">Demo</a>
+                <a href="https://github.com/tiation/tiation-cms" class="footer-link">GitHub</a>
+                <a href="https://github.com/tiation/tiation-cms/wiki" class="footer-link">Documentation</a>
+            </div>
+            <p>&copy; 2025 Tiation CMS. All rights reserved.</p>
+            <p>Built with 💜 by the Tiation team</p>
+        </div>
     </div>
 </body>
 </html>

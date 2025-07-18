@@ -50,6 +50,18 @@
             margin-bottom: 2rem;
         }
         
+        .hero-badges {
+            margin: 2rem 0;
+        }
+        
+        .hero-badges img {
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-badges img:hover {
+            transform: scale(1.05);
+        }
+        
         .demo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -267,9 +279,12 @@
 <body>
     <div class="container">
         <header class="hero">
-            <h1>Tiation Cms</h1>
-            <p>Enterprise-grade Cms Dashboard - Interactive Demo</p>
-            <a href="https://github.com/tiaastor/tiation-cms" class="demo-button">
+            <h1>Tiation CMS</h1>
+            <p>Enterprise-grade headless CMS - Interactive Demo</p>
+            <div class="hero-badges">
+                <img src="https://img.shields.io/badge/🔮_TIATION_ECOSYSTEM-tiation_cms-00FFFF?style=for-the-badge&labelColor=0A0A0A&color=FF00FF" alt="Tiation Ecosystem">
+            </div>
+            <a href="https://github.com/tiation/tiation-cms" class="demo-button">
                 View on GitHub
             </a>
         </header>
@@ -361,9 +376,9 @@
     </div>
     
     <footer class="footer">
-        <p>Built with ❤️ by <a href="https://github.com/tiaastor">Tiation</a> | 
-        <a href="https://github.com/tiaastor/tiation-cms">View Repository</a> | 
-        <a href="https://github.com/tiaastor/tiation-cms/wiki">Documentation</a></p>
+        <p>Built with ❤️ by <a href="https://github.com/tiation">Tiation</a> | 
+        <a href="https://github.com/tiation/tiation-cms">View Repository</a> | 
+        <a href="https://github.com/tiation/tiation-cms/wiki">Documentation</a></p>
     </footer>
     
     <script>
