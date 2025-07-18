@@ -18,7 +18,7 @@
 ---
 <!-- Hero Image with Dark Neon Theme -->
 <div align="center">
-  <img src=".screenshots/hero-banner.png" alt="Tiation Headless CMS - Enterprise Content Management" width="100%">
+  <img src=".screenshots/hero-banner.svg" alt="Tiation Headless CMS - Enterprise Content Management" width="100%">
 </div>
 
 <div align="center">
@@ -41,7 +41,7 @@
 - **Implementation Timeline**: 6-8 weeks to revenue
 
 <div align="center">
-  <img src=".screenshots/demo-overview.png" alt="Project Overview" width="80%">
+  <img src=".screenshots/demo-overview.svg" alt="Project Overview" width="80%">
 </div>
 
 ---
@@ -53,24 +53,24 @@
   <tr>
     <td width="50%">
       <h3>🎯 API-First Architecture</h3>
-      <img src=".screenshots/api-architecture.png" alt="API-First Architecture" width="100%">
+      <img src=".screenshots/api-architecture.svg" alt="API-First Architecture" width="100%">
       <p>RESTful and GraphQL APIs with OpenAPI documentation, webhook support, and real-time sync capabilities</p>
     </td>
     <td width="50%">
       <h3>⚡ Multi-Tenant SaaS</h3>
-      <img src=".screenshots/multi-tenant.png" alt="Multi-Tenant Platform" width="100%">
+      <img src=".screenshots/multi-tenant.svg" alt="Multi-Tenant Platform" width="100%">
       <p>Isolated tenant environments with custom domains, branded interfaces, and enterprise-grade security</p>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h3>🔥 Enterprise Management</h3>
-      <img src=".screenshots/enterprise-dashboard.png" alt="Enterprise Dashboard" width="100%">
+      <img src=".screenshots/enterprise-dashboard.svg" alt="Enterprise Dashboard" width="100%">
       <p>Advanced analytics, user management, role-based access control, and comprehensive audit trails</p>
     </td>
     <td width="50%">
       <h3>🌟 Managed Hosting</h3>
-      <img src=".screenshots/hosting-dashboard.png" alt="Managed Hosting Dashboard" width="100%">
+      <img src=".screenshots/hosting-dashboard.svg" alt="Managed Hosting Dashboard" width="100%">
       <p>Auto-scaling infrastructure, CDN integration, database backups, and 99.9% uptime SLA</p>
     </td>
   </tr>
@@ -91,7 +91,7 @@
 
 <div align="center">
   <a href="https://tiaastor.github.io/tiation-cms" target="_blank">
-    <img src=".screenshots/demo-preview.png" alt="Live Demo Preview" width="80%">
+    <img src=".screenshots/demo-preview.svg" alt="Live Demo Preview" width="80%">
   </a>
   <br>
   <a href="https://tiaastor.github.io/tiation-cms" target="_blank">
@@ -104,7 +104,7 @@
 ## 🏗️ Architecture
 
 <div align="center">
-  <img src=".screenshots/architecture-diagram.png" alt="Architecture Diagram" width="90%">
+  <img src=".screenshots/architecture-diagram.svg" alt="Architecture Diagram" width="90%">
 </div>
 
 ### System Components
@@ -155,7 +155,7 @@ npm run dev
 ### Development Workflow
 
 <div align="center">
-  <img src=".screenshots/development-workflow.png" alt="Development Workflow" width="70%">
+  <img src=".screenshots/development-workflow.svg" alt="Development Workflow" width="70%">
 </div>
 
 ---
@@ -165,19 +165,19 @@ npm run dev
 ### Desktop Interface
 
 <div align="center">
-  <img src=".screenshots/desktop-interface.png" alt="Desktop Interface" width="100%">
+  <img src=".screenshots/desktop-interface.svg" alt="Desktop Interface" width="100%">
 </div>
 
 ### Mobile Interface
 
 <div align="center">
-  <img src=".screenshots/mobile-interface.png" alt="Mobile Interface" width="60%">
+  <img src=".screenshots/mobile-interface.svg" alt="Mobile Interface" width="60%">
 </div>
 
 ### Dark Theme
 
 <div align="center">
-  <img src=".screenshots/dark-theme.png" alt="Dark Theme Interface" width="100%">
+  <img src=".screenshots/dark-theme.svg" alt="Dark Theme Interface" width="100%">
 </div>
 
 ---
@@ -185,7 +185,7 @@ npm run dev
 ## 🛠️ Technology Stack
 
 <div align="center">
-  <img src=".screenshots/tech-stack.png" alt="Technology Stack" width="80%">
+  <img src=".screenshots/tech-stack.svg" alt="Technology Stack" width="80%">
 </div>
 
 - **Frontend**: React, TypeScript, Tailwind CSS
@@ -198,7 +198,7 @@ npm run dev
 ## 📊 Performance Metrics
 
 <div align="center">
-  <img src=".screenshots/performance-metrics.png" alt="Performance Metrics" width="90%">
+  <img src=".screenshots/performance-metrics.svg" alt="Performance Metrics" width="90%">
 </div>
 
 ---
@@ -217,7 +217,7 @@ API_KEY=your-api-key-here
 ### Configuration Screenshots
 
 <div align="center">
-  <img src=".screenshots/configuration-setup.png" alt="Configuration Setup" width="70%">
+  <img src=".screenshots/configuration-setup.svg" alt="Configuration Setup" width="70%">
 </div>
 
 ---
@@ -226,7 +226,7 @@ API_KEY=your-api-key-here
 
 <div align="center">
   <a href="https://github.com/TiaAstor/tiation-cms/wiki" target="_blank">
-    <img src=".screenshots/documentation-preview.png" alt="Documentation Preview" width="80%">
+    <img src=".screenshots/documentation-preview.svg" alt="Documentation Preview" width="80%">
   </a>
   <br>
   <a href="https://github.com/TiaAstor/tiation-cms/wiki" target="_blank">
@@ -248,7 +248,7 @@ API_KEY=your-api-key-here
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 <div align="center">
-  <img src=".screenshots/contribution-workflow.png" alt="Contribution Workflow" width="70%">
+  <img src=".screenshots/contribution-workflow.svg" alt="Contribution Workflow" width="70%">
 </div>
 
 ### Development Setup
@@ -273,7 +273,7 @@ git push origin feature/amazing-feature
 ## 🧪 Testing
 
 <div align="center">
-  <img src=".screenshots/testing-dashboard.png" alt="Testing Dashboard" width="80%">
+  <img src=".screenshots/testing-dashboard.svg" alt="Testing Dashboard" width="80%">
 </div>
 
 ```bash
@@ -292,7 +292,7 @@ npm run test:e2e
 ## 🚀 Deployment
 
 <div align="center">
-  <img src=".screenshots/deployment-pipeline.png" alt="Deployment Pipeline" width="90%">
+  <img src=".screenshots/deployment-pipeline.svg" alt="Deployment Pipeline" width="90%">
 </div>
 
 ### Production Deployment
@@ -310,7 +310,7 @@ npm run deploy
 ## 📈 Roadmap
 
 <div align="center">
-  <img src=".screenshots/roadmap.png" alt="Project Roadmap" width="90%">
+  <img src=".screenshots/roadmap.svg" alt="Project Roadmap" width="90%">
 </div>
 
 ### 💰 Revenue Generation Phase (Q1 2025)
@@ -342,7 +342,7 @@ npm run deploy
 ## 📞 Support
 
 <div align="center">
-  <img src=".screenshots/support-channels.png" alt="Support Channels" width="70%">
+  <img src=".screenshots/support-channels.svg" alt="Support Channels" width="70%">
 </div>
 
 - 📧 **Email**: [support@example.com](mailto:support@example.com)
@@ -361,7 +361,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🌟 Acknowledgments
 
 <div align="center">
-  <img src=".screenshots/acknowledgments.png" alt="Acknowledgments" width="60%">
+  <img src=".screenshots/acknowledgments.svg" alt="Acknowledgments" width="60%">
 </div>
 
 - Thanks to all contributors
@@ -371,7 +371,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <img src=".screenshots/footer-banner.png" alt="Footer Banner" width="100%">
+  <img src=".screenshots/footer-banner.svg" alt="Footer Banner" width="100%">
   
   **⭐ Star this repository if you find it helpful! ⭐**
   
