@@ -1,431 +1,175 @@
+---
+layout: default
+title: "Home"
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiation CMS - Enterprise Headless Content Management</title>
+    <title>{{ site.title }}</title>
     <style>
-        * {
+        :root {
+            --primary-color: #00D9FF;
+            --secondary-color: #00FF88;
+            --accent-color: #FF0080;
+            --background-color: #0A0A0A;
+            --card-background: #1A1A1A;
+            --text-color: #FFFFFF;
+        }
+        
+        body {
+            background: var(--background-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
         }
-
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            opacity: 0.9;
+        }
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2rem;
         }
-
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #667eea;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #667eea;
-        }
-
-        .hero {
-            padding: 120px 0 80px;
-            text-align: center;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            margin: 0 10px;
-        }
-
-        .btn:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-        }
-
+        
         .features {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin: 2rem 0;
         }
-
+        
         .feature-card {
+            background: var(--card-background);
             padding: 2rem;
-            background: #f8f9fa;
             border-radius: 10px;
-            transition: transform 0.3s;
+            border: 1px solid var(--primary-color);
+            box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+            transition: transform 0.3s ease;
         }
-
+        
         .feature-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 5px 30px rgba(0, 217, 255, 0.2);
         }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
+        
         .feature-card h3 {
-            margin-bottom: 1rem;
-            color: #667eea;
+            color: var(--primary-color);
+            margin-top: 0;
         }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 3rem;
-        }
-
-        .architecture {
-            padding: 80px 0;
-            background: #f8f9fa;
-        }
-
-        .architecture-diagram {
-            background: white;
-            border-radius: 10px;
-            padding: 2rem;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            margin: 2rem 0;
-            overflow-x: auto;
-        }
-
-        .about {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .about-image {
-            text-align: center;
-        }
-
-        .placeholder-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 10px;
+        
+        .cta-buttons {
             display: flex;
-            align-items: center;
+            gap: 1rem;
             justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        .contact {
-            padding: 80px 0;
-            background: #f8f9fa;
-            text-align: center;
-        }
-
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-email {
-            font-size: 1.3rem;
             margin: 2rem 0;
-            padding: 1rem;
-            background: white;
-            border-radius: 10px;
-            border: 2px solid #667eea;
+            flex-wrap: wrap;
         }
-
-        .contact-email a {
-            color: #667eea;
+        
+        .cta-button {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: var(--background-color);
             text-decoration: none;
-            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
-
-        .contact-email a:hover {
-            text-decoration: underline;
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
         }
-
-        .cta {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        .footer {
+            background: var(--card-background);
+            padding: 2rem;
             text-align: center;
-            color: white;
+            margin-top: 4rem;
+            border-top: 1px solid var(--primary-color);
         }
-
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta p {
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
+        
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-links {
-                display: none;
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">Tiation CMS</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#architecture">Architecture</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://github.com/tiation/tiation-cms">GitHub</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Tiation CMS</h1>
-            <p>Enterprise-grade headless CMS for industry-specific content management</p>
-            <a href="https://github.com/tiation/tiation-cms" class="btn">Get Started</a>
-            <a href="#features" class="btn">Learn More</a>
+    <div class="hero">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <div class="cta-buttons">
+            <a href="#documentation" class="cta-button">
+                📚 Documentation
+            </a>
+            <a href="#demo" class="cta-button">
+                🚀 Live Demo
+            </a>
+            <a href="{{ site.repository }}" class="cta-button">
+                💻 GitHub
+            </a>
         </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Key Features</h2>
-            <p class="section-subtitle">Built for scalability, flexibility, and ease of use in enterprise environments</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏗️</div>
-                    <h3>Headless Architecture</h3>
-                    <p>Decouple content management from presentation layer for maximum flexibility and scalability.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏭</div>
-                    <h3>Industry-Specific</h3>
-                    <p>Tailored for specific vertical requirements with custom content types and workflows.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏢</div>
-                    <h3>Enterprise-Grade</h3>
-                    <p>Built for scale with security, performance, and compliance features for enterprise use.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔌</div>
-                    <h3>API-First</h3>
-                    <p>RESTful API for seamless integration with any frontend technology or third-party systems.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>User-Friendly</h3>
-                    <p>Intuitive admin interface designed for content creators and editors of all skill levels.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Extensible</h3>
-                    <p>Modular architecture allows for custom functionality and easy third-party integrations.</p>
-                </div>
+    </div>
+    
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎯 Enterprise Grade</h3>
+                <p>Professional solution built with enterprise standards and best practices in mind.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Secure & Reliable</h3>
+                <p>Security-first approach with comprehensive testing and validation.</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ High Performance</h3>
+                <p>Optimized for speed and efficiency with modern development practices.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Dark Neon Theme</h3>
+                <p>Beautiful dark interface with cyan gradient flares for modern aesthetics.</p>
             </div>
         </div>
-    </section>
-
-    <section id="architecture" class="architecture">
-        <div class="container">
-            <h2 class="section-title">System Architecture</h2>
-            <p class="section-subtitle">Decoupled, scalable architecture for modern content management</p>
-            
-            <div class="architecture-diagram">
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Admin Panel   │    │   Content API   │    │   Frontend App  │
-│   (React/Vue)   │◄──►│   (Node.js)     │◄──►│   (Any Tech)    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │    Database     │
-                       │  (PostgreSQL)   │
-                       └─────────────────┘
-            </div>
+        
+        <div id="documentation">
+            {{ content }}
         </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Tiation CMS</h2>
-                    <p>Tiation CMS is a simplified, enterprise-grade headless content management system designed for specific industry verticals. Built with scalability, flexibility, and ease of use in mind, it provides a robust foundation for content-driven applications.</p>
-                    
-                    <p>Our CMS features JWT-based authentication, role-based access control, input validation, and comprehensive security measures. With Docker deployment support and extensive API documentation, it's ready for production environments.</p>
-                    
-                    <p>Whether you're building a corporate website, e-commerce platform, or industry-specific application, Tiation CMS provides the tools and flexibility you need to manage content effectively.</p>
-                </div>
-                
-                <div class="about-image">
-                    <div class="placeholder-image">
-                        Enterprise CMS Platform
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-subtitle">Get in touch for enterprise content management solutions</p>
-                
-                <div class="contact-email">
-                    <p>📧 Email: <a href="mailto:tiatheone@protonmail.com">tiatheone@protonmail.com</a></p>
-                </div>
-                
-                <p>Ready to streamline your content management? Reach out to discuss enterprise deployment, custom features, or integration support for your specific industry needs.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Transform Your Content Management?</h2>
-            <p>Deploy Tiation CMS and experience enterprise-grade headless content management for your industry.</p>
-            <a href="https://github.com/tiation/tiation-cms" class="btn">Explore on GitHub</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Tiation CMS. All rights reserved. | <a href="https://github.com/tiation/tiation-cms" style="color: #667eea;">GitHub Repository</a></p>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Add scroll effect to header
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
-        });
-    </script>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+        <p>Built with ❤️ using Jekyll and GitHub Pages</p>
+    </div>
 </body>
 </html>
