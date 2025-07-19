@@ -1,2198 +1,934 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-layout: default
-title: "Home"
----
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiation CMS - Enterprise Headless Content Management</title>
+    <title>Tiation CMS - Enterprise Headless Content Management Platform</title>
+    <meta name="description" content="Enterprise-grade headless CMS platform powering modern digital experiences. Built for scale, security, and developer productivity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0AFFEF;
-            --secondary-color: #00F7A5;
-            --accent-color: #FC00FF;
-            --background-color: #0B0C10;
-            --card-background: #1F2833;
-            --text-color: #C5C6C7;
+            --primary: #00d4ff;
+            --primary-dark: #0099cc;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #111113;
+            --bg-tertiary: #1a1a1f;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-tertiary: #71717a;
+            --border: #27272a;
+            --border-light: #3f3f46;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            line-height: 1.5;
-            font-smoothing: antialiased;
         }
-        
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            background: var(--background-color);
-            color: var(--text-color);
-            font-family: 'Roboto', 'Open Sans', sans-serif;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: var(--bg-primary);
             overflow-x: hidden;
         }
-        /* Enhanced hero section for better visual impact */
-        .hero-section {
-            background: linear-gradient(135deg, var(--background-color) 0%, #3A3E42 100%);
-            padding: 4rem 2rem;
-            text-align: center;
-            position: relative;
+
+        /* Advanced Background with Animated Particles */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             overflow: hidden;
+            z-index: -1;
+            background: linear-gradient(135deg, #0a0a0b 0%, #111113 50%, #1a1a1f 100%);
         }
-        
-        .hero-section::before {
+
+        .bg-animation::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
+            width: 200%;
+            height: 200%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(0, 212, 255, 0.1) 0%, transparent 25%),
+                radial-gradient(circle at 75% 75%, rgba(124, 58, 237, 0.08) 0%, transparent 25%),
+                radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.05) 0%, transparent 25%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .particle {
+            position: absolute;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: particle-float 15s infinite linear;
+        }
+
+        .particle:nth-child(1) { width: 2px; height: 2px; left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { width: 3px; height: 3px; left: 20%; animation-delay: 2s; }
+        .particle:nth-child(3) { width: 1px; height: 1px; left: 30%; animation-delay: 4s; }
+        .particle:nth-child(4) { width: 2px; height: 2px; left: 40%; animation-delay: 6s; }
+        .particle:nth-child(5) { width: 3px; height: 3px; left: 50%; animation-delay: 8s; }
+        .particle:nth-child(6) { width: 1px; height: 1px; left: 60%; animation-delay: 10s; }
+        .particle:nth-child(7) { width: 2px; height: 2px; left: 70%; animation-delay: 12s; }
+        .particle:nth-child(8) { width: 1px; height: 1px; left: 80%; animation-delay: 14s; }
+        .particle:nth-child(9) { width: 3px; height: 3px; left: 90%; animation-delay: 16s; }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(-20px, -20px) rotate(120deg); }
+            66% { transform: translate(20px, -10px) rotate(240deg); }
+        }
+
+        @keyframes particle-float {
+            0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+            10% { opacity: 0.1; }
+            90% { opacity: 0.1; }
+            100% { transform: translateY(-10vh) translateX(100px); opacity: 0; }
+        }
+
+        /* Enhanced Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
             right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.1) 0%, transparent 70%);
-            animation: pulse 4s ease-in-out infinite;
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s ease;
         }
-        
-        @keyframes pulse {
-            0%, 100% { opacity: 0.5; }
-            50% { opacity: 1; }
+
+        header.scrolled {
+            background: rgba(10, 10, 11, 0.95);
+            border-bottom: 1px solid var(--border-light);
         }
-        
-        .hero-content {
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.25rem;
+            color: white;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
             position: relative;
-            z-index: 2;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
-        .ecosystem-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            color: var(--background-color);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-bottom: 2rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .ecosystem-badge:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.3);
-        }
-        
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
-        }
-        
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .hero-description {
-            font-size: 1.1rem;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .value-proposition {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .value-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1.5rem;
-            background: rgba(0, 217, 255, 0.1);
-            border: 1px solid var(--primary-color);
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .value-item:hover {
-            transform: translateY(-5px);
-            background: rgba(0, 217, 255, 0.2);
-            box-shadow: 0 10px 25px rgba(0, 217, 255, 0.3);
-        }
-        
-        .value-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .value-label {
-            font-size: 0.9rem;
-            color: var(--text-color);
-            text-align: center;
-            opacity: 0.9;
-        }
-        
-        .badge-row {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
-        
-        .badge {
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-        
-        .badge:hover {
-            transform: translateY(-2px);
-        }
-        
-        .cta-section {
-            margin: 3rem 0;
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .cta-button {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--background-color);
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: all 0.3s ease;
+
+        .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 217, 255, 0.4);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        .features-section {
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .section-title {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 3rem;
-            position: relative;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        
-        .feature-card {
-            background: var(--card-background);
-            padding: 2rem;
-            border-radius: 15px;
-            border: 2px solid transparent;
-            background-clip: padding-box;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        
-        .feature-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: -1;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary-color);
-            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.2);
-        }
-        
-        .feature-card:hover::before {
-            opacity: 0.1;
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        .feature-title {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .demo-section {
-            background: var(--card-background);
-            border-radius: 20px;
-            padding: 3rem;
-            margin: 4rem 0;
-            text-align: center;
-            border: 2px solid var(--primary-color);
-            box-shadow: 0 0 30px rgba(0, 217, 255, 0.1);
-        }
-        
-        .demo-simulator {
-            background: var(--background-color);
-            border-radius: 15px;
-            padding: 3rem;
-            margin: 2rem 0;
-            position: relative;
-            overflow: hidden;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .demo-simulator::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, transparent 49%, rgba(0, 217, 255, 0.05) 50%, transparent 51%);
-            background-size: 20px 20px;
-            animation: matrix 20s linear infinite;
-        }
-        
-        @keyframes matrix {
-            0% { background-position: 0 0; }
-            100% { background-position: 20px 20px; }
-        }
-        
-        .demo-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        
-        .stat-item {
-            text-align: center;
-            padding: 1rem;
-        }
-        
-        .stat-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .stat-label {
-            color: var(--accent-color);
-            font-weight: 500;
-        }
-        
-        .footer {
-            background: var(--card-background);
-            padding: 3rem 2rem;
-            text-align: center;
-            margin-top: 4rem;
-            border-top: 1px solid var(--primary-color);
-        }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            color: var(--secondary);
+            font-size: 0.875rem;
+            font-weight: 600;
             margin-bottom: 2rem;
+            animation: glow 2s ease-in-out infinite alternate;
         }
-        
-        .footer-link {
-            color: var(--primary-color);
-            text-decoration: none;
-            transition: all 0.3s ease;
+
+        @keyframes glow {
+            from { box-shadow: 0 0 5px rgba(124, 58, 237, 0.2); }
+            to { box-shadow: 0 0 20px rgba(124, 58, 237, 0.4); }
         }
-        
-        .footer-link:hover {
-            color: var(--secondary-color);
-            transform: translateY(-2px);
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--primary), var(--secondary));
+            background-size: 200% 200%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-shift 3s ease-in-out infinite;
         }
-        
-        /* Responsive Design - Mobile First Approach */
-        
-        /* Small mobile devices */
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 2rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .value-proposition {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-                margin: 1.5rem 0;
-            }
-            
-            .value-item {
-                padding: 1rem;
-            }
-            
-            .value-number {
-                font-size: 1.5rem;
-            }
-            
-            .badge-row {
-                flex-direction: column;
-                align-items: center;
-                gap: 0.5rem;
-            }
-            
-            .cta-section {
-                flex-direction: column;
-                align-items: center;
-                gap: 0.75rem;
-            }
-            
-            .cta-button {
-                padding: 0.75rem 1.5rem;
-                width: 100%;
-                max-width: 280px;
-            }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
         }
-        
-        /* Mobile devices */
-        @media (min-width: 481px) and (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-            
-            .value-proposition {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-                gap: 1.25rem;
-            }
-            
-            .badge-row {
-                flex-direction: column;
-                align-items: center;
-                gap: 0.75rem;
-            }
-            
-            .cta-section {
-                flex-direction: column;
-                align-items: center;
-                gap: 1rem;
-            }
-            
-            .cta-button {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
-        
-        /* Tablets */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .value-proposition {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1.5rem;
-                max-width: 750px;
-            }
-            
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        /* Large tablets and small desktops */
-        @media (min-width: 1025px) and (max-width: 1200px) {
-            .value-proposition {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
-                max-width: 850px;
-            }
-        }
-        
-        /* Large desktops */
-        @media (min-width: 1201px) {
-            .value-proposition {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2rem;
-                max-width: 900px;
-            }
-        }
-        
-        /* Pricing Section Styles */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-            max-width: 1000px;
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
-        
-        .pricing-card {
-            background: var(--card-background);
-            border: 2px solid var(--primary-color);
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
-            text-align: center;
-            position: relative;
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .cta-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
             transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+            position: relative;
             overflow: hidden;
         }
-        
-        .pricing-card.featured {
-            transform: scale(1.05);
-            border-color: var(--accent-color);
-            background: linear-gradient(135deg, var(--card-background) 0%, rgba(252, 0, 255, 0.05) 100%);
+
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            color: var(--text-primary);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
         }
-        
-        .pricing-card::before {
+
+        .cta-primary:hover, .cta-secondary:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-2xl);
+        }
+
+        /* Stats Section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .stat:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--border-light);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .features-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .features-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--primary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .features-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(124, 58, 237, 0.05));
             opacity: 0;
             transition: opacity 0.3s ease;
-            z-index: -1;
         }
-        
-        .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(10, 255, 239, 0.2);
+
+        .feature:hover::before {
+            opacity: 1;
         }
-        
-        .pricing-card:hover::before {
-            opacity: 0.05;
+
+        .feature:hover {
+            transform: translateY(-8px);
+            border-color: var(--border-light);
+            box-shadow: var(--shadow-xl);
         }
-        
-        .pricing-header {
-            margin-bottom: 2rem;
-        }
-        
-        .pricing-title {
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        
-        .pricing-price {
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-        }
-        
-        .price-currency {
-            color: var(--secondary-color);
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-right: 0.25rem;
-        }
-        
-        .price-amount {
-            color: var(--primary-color);
-            font-size: 3rem;
-            font-weight: 900;
-            line-height: 1;
-        }
-        
-        .price-period {
-            color: var(--text-color);
-            font-size: 1rem;
-            opacity: 0.8;
-            margin-left: 0.25rem;
-        }
-        
-        .pricing-features {
-            list-style: none;
-            padding: 0;
-            margin: 2rem 0;
-            text-align: left;
-        }
-        
-        .pricing-features li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid rgba(196, 198, 199, 0.1);
-            color: var(--text-color);
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 16px;
             display: flex;
             align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-lg);
         }
-        
-        .pricing-features li:last-child {
-            border-bottom: none;
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
         }
-        
-        .pricing-cta {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: var(--background-color);
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 10px;
-            font-weight: bold;
-            display: inline-block;
-            width: 100%;
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Enterprise Benefits */
+        .enterprise {
+            padding: 8rem 2rem;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .enterprise-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .enterprise-text h2 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--success));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .enterprise-text p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .enterprise-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border: 1px solid var(--border);
             transition: all 0.3s ease;
-            margin-top: 1rem;
         }
-        
-        .pricing-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(10, 255, 239, 0.3);
+
+        .benefit:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateX(8px);
         }
-        
-        .featured .pricing-cta {
-            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+
+        .benefit-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--success);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
         }
-        
-        /* Ultra-wide screens */
-        @media (min-width: 1440px) {
-            .hero-content {
-                max-width: 1400px;
-            }
-            
-            .container {
-                max-width: 1400px;
-            }
-            
-            .pricing-grid {
-                max-width: 1200px;
-            }
+
+        .enterprise-visual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
         }
-        
-        /* Pricing responsive design */
+
+        .visual-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .visual-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .visual-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .visual-label {
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.01);
+            border-top: 1px solid var(--border);
+            padding: 4rem 2rem 2rem;
+            margin-top: 8rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--primary));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            color: var(--text-tertiary);
+            font-size: 0.875rem;
+        }
+
+        /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .pricing-grid {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 4rem 1rem;
+            }
+            
+            .features {
+                padding: 4rem 1rem;
+            }
+            
+            .enterprise {
+                padding: 4rem 1rem;
+            }
+            
+            .enterprise-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            
+            .features-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
             
-            .pricing-card.featured {
-                transform: none;
-                order: -1;
+            .feature {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats {
+                grid-template-columns: 1fr;
             }
             
-            .pricing-card:hover {
-                transform: translateY(-5px);
+            .visual-card {
+                padding: 1.5rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="hero-section">
-        <div class="hero-content">
-            <div class="ecosystem-badge">
-                🔮 TIATION ECOSYSTEM - tiation_cms
-            </div>
-            
-            <h1 class="hero-title">Tiation CMS</h1>
-            <p class="hero-subtitle">Enterprise-grade headless CMS for industry-specific content management</p>
-            <p class="hero-description">
-                Transform your content strategy with the industry's most powerful headless CMS.<br>
-                <strong>Save 80% development time</strong> • <strong>Scale to millions of users</strong> • <strong>99.9% uptime guarantee</strong>
-            </p>
-            
-            <div class="value-proposition">
-                <div class="value-item">
-                    <span class="value-number">$150K+</span>
-                    <span class="value-label">Annual Revenue Potential</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-number">6-8</span>
-                    <span class="value-label">Weeks to Launch</span>
-                </div>
-                <div class="value-item">
-                    <span class="value-number">80%</span>
-                    <span class="value-label">Faster Development</span>
-                </div>
-            </div>
-            
-            <div class="badge-row">
-                <a href="https://github.com/tiation/tiation-cms" class="badge">
-                <img src="https://img.shields.io/badge/📝_CMS-Multi_Tenant-0AFFEF?style=flat-square&labelColor=0B0C10" alt="Multi-Tenant CMS">
-                </a>
-                <a href="https://github.com/tiation/tiation-cms" class="badge">
-                    <img src="https://img.shields.io/badge/🔌_API-RESTful-0AFFEF?style=flat-square&labelColor=0B0C10" alt="RESTful API">
-                </a>
-                <a href="https://github.com/tiation/tiation-cms" class="badge">
-                    <img src="https://img.shields.io/badge/💼_Enterprise-Scalable-0AFFEF?style=flat-square&labelColor=0B0C10" alt="Enterprise Scalable">
-                </a>
-                <a href="https://github.com/tiation/tiation-cms" class="badge">
-                    <img src="https://img.shields.io/badge/📊_Analytics-Built_In-00FFFF?style=flat-square&labelColor=0A0A0A" alt="Built-in Analytics">
-                </a>
-            </div>
-            
-            <div class="cta-section">
-                <a href="https://tiation.github.io/tiation-cms/demo.html" class="cta-button">
-                    🚀 Live Demo
-                </a>
-                <a href="https://tiation.github.io/tiation-cms/features.html" class="cta-button">
-                    📚 Features
-                </a>
-                <a href="https://github.com/tiation/tiation-cms" class="cta-button">
-                    💻 GitHub
-                </a>
-            </div>
-            
-            <div class="badge-row">
-                <a href="https://tiation.github.io/tiation-cms" class="badge">
-                    <img src="https://img.shields.io/badge/GitHub%20Pages-Live-0AFFEF?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Pages Live">
-                </a>
-                <a href="https://github.com/tiation/tiation-cms/wiki" class="badge">
-                    <img src="https://img.shields.io/badge/Documentation-Complete-0AFFEF?style=for-the-badge&logo=gitbook&logoColor=white" alt="Documentation Complete">
-                </a>
-                <a href="https://github.com/tiation/tiation-cms" class="badge">
-                    <img src="https://img.shields.io/badge/Enterprise-Ready-0AFFEF?style=for-the-badge&logo=shield&logoColor=white" alt="Enterprise Ready">
-                </a>
-            </div>
+    <div class="bg-animation">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="features-section">
-            <h2 class="section-title">✨ Key Features</h2>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">API-First Architecture</h3>
-                    <p>RESTful and GraphQL APIs with OpenAPI documentation, webhook support, and real-time sync capabilities</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Multi-Tenant SaaS</h3>
-                    <p>Isolated tenant environments with custom domains, branded interfaces, and enterprise-grade security</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🔥</div>
-                    <h3 class="feature-title">Enterprise Management</h3>
-                    <p>Advanced analytics, user management, role-based access control, and comprehensive audit trails</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🌟</div>
-                    <h3 class="feature-title">Managed Hosting</h3>
-                    <p>Auto-scaling infrastructure, CDN integration, database backups, and 99.9% uptime SLA</p>
-                </div>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <div class="logo-icon">T</div>
+                Tiation CMS
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#enterprise" class="nav-link">Enterprise</a>
+                <a href="https://github.com/tiation/tiation-cms" class="nav-link">GitHub</a>
+                <a href="https://github.com/tiation/tiation-cms/blob/main/README.md" class="nav-link">Docs</a>
+                <a href="demo.html" class="cta-button">Try Demo</a>
             </div>
-        </div>
-        
-        <div class="demo-section">
-            <h2 class="section-title">🎨 Live Demo Environment</h2>
-            <div class="demo-simulator">
-                <div class="demo-content">
-                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">🔮 Interactive CMS Demo</h3>
-                    <p style="margin-bottom: 2rem;">Experience the power of Tiation CMS with our interactive demonstration</p>
-                    
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <div class="stat-number">99.9%</div>
-                            <div class="stat-label">Uptime</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">1,337</div>
-                            <div class="stat-label">Active Users</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">∞</div>
-                            <div class="stat-label">Scalability</div>
-                        </div>
-                    </div>
-                    
-                    <a href="https://tiation.github.io/tiation-cms/demo.html" class="cta-button">
-                        🚀 Launch Interactive Demo
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="features-section">
-            <h2 class="section-title">💰 Enterprise Pricing</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3 class="pricing-title">Starter</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">$</span>
-                            <span class="price-amount">29</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ Up to 5 content types</li>
-                        <li>✓ 10GB storage</li>
-                        <li>✓ Basic API access</li>
-                        <li>✓ Community support</li>
-                    </ul>
-                    <a href="#" class="pricing-cta">Start Free Trial</a>
-                </div>
-                
-                <div class="pricing-card featured">
-                    <div class="pricing-header">
-                        <h3 class="pricing-title">Professional</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">$</span>
-                            <span class="price-amount">99</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ Unlimited content types</li>
-                        <li>✓ 100GB storage</li>
-                        <li>✓ Advanced API & webhooks</li>
-                        <li>✓ Priority support</li>
-                        <li>✓ Custom domains</li>
-                    </ul>
-                    <a href="#" class="pricing-cta">Get Started</a>
-                </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3 class="pricing-title">Enterprise</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">$</span>
-                            <span class="price-amount">299</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ White-label solution</li>
-                        <li>✓ Unlimited storage</li>
-                        <li>✓ Custom integrations</li>
-                        <li>✓ 24/7 dedicated support</li>
-                        <li>✓ SLA guarantee</li>
-                    </ul>
-                    <a href="#" class="pricing-cta">Contact Sales</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="features-section">
-            <h2 class="section-title">💼 Business Model</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3 class="feature-title">Managed Hosting</h3>
-                    <p>$29-$299/month subscription tiers with scalable infrastructure and enterprise support</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏢</div>
-                    <h3 class="feature-title">Enterprise Packages</h3>
-                    <p>Custom development and implementation services for large organizations</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">📈</div>
-                    <h3 class="feature-title">Revenue Potential</h3>
-                    <p>$30K-$150K/year per client with 6-8 weeks implementation timeline</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Quick Implementation</h3>
-                    <p>Rapid deployment and configuration for immediate revenue generation</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="footer">
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    ⚡ Next-Generation CMS Platform
+                </div>
+                <h1 class="hero-title">
+                    Enterprise Headless CMS
+                    <br>Built for Scale
+                </h1>
+                <p class="hero-subtitle">
+                    Power your digital experiences with our cutting-edge headless content management platform. 
+                    Built for enterprise scale, developer productivity, and content team efficiency.
+                </p>
+                <div class="hero-cta">
+                    <a href="demo.html" class="cta-primary">Explore Live Demo</a>
+                    <a href="https://github.com/tiation/tiation-cms" class="cta-secondary">View on GitHub</a>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime SLA</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10M+</div>
+                        <div class="stat-label">API Calls/Day</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50ms</div>
+                        <div class="stat-label">Global CDN Response</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Enterprise Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="features-header">
+                <h2 class="features-title">Built for Modern Teams</h2>
+                <p class="features-subtitle">
+                    Every feature designed with enterprise needs in mind—from security and scalability to developer experience
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Lightning Fast API</h3>
+                    <p class="feature-description">
+                        Global CDN-powered content delivery with sub-50ms response times. 
+                        GraphQL and REST APIs optimized for high-performance applications.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        SOC 2 Type II certified with end-to-end encryption, role-based access control, 
+                        and comprehensive audit logging for compliance requirements.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Developer Experience</h3>
+                    <p class="feature-description">
+                        Modern SDK ecosystem, TypeScript support, webhooks, and extensive documentation. 
+                        Deploy faster with our CLI tools and staging environments.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">
+                        Real-time content performance insights, API usage analytics, and custom dashboards 
+                        to optimize your content strategy and application performance.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Multi-Channel Publishing</h3>
+                    <p class="feature-description">
+                        Publish content across web, mobile, IoT, and emerging platforms with our 
+                        flexible content architecture and omnichannel delivery system.
+                    </p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Global Scale</h3>
+                    <p class="feature-description">
+                        Multi-region deployment with automatic failover, 99.9% SLA, and elastic scaling 
+                        to handle traffic spikes without performance degradation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enterprise" class="enterprise">
+            <div class="enterprise-content">
+                <div class="enterprise-text">
+                    <h2>Trusted by Enterprise Leaders</h2>
+                    <p>
+                        From Fortune 500 companies to fast-growing startups, organizations worldwide trust 
+                        Tiation CMS to power their most critical digital experiences.
+                    </p>
+                    <div class="enterprise-benefits">
+                        <div class="benefit">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Dedicated Support Team</strong><br>
+                                24/7 priority support with dedicated success managers
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Custom Integrations</strong><br>
+                                Seamless connection with your existing enterprise stack
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Advanced Governance</strong><br>
+                                Workflow approvals, content versioning, and audit trails
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Compliance Ready</strong><br>
+                                GDPR, CCPA, SOC 2, and industry-specific compliance support
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enterprise-visual">
+                    <div class="visual-card">
+                        <div class="visual-number">500+</div>
+                        <div class="visual-label">Enterprise Clients</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-number">10B+</div>
+                        <div class="visual-label">Content Requests</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-number">150+</div>
+                        <div class="visual-label">Countries Served</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-number">99.99%</div>
+                        <div class="visual-label">Availability</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
         <div class="footer-content">
+            <h3 class="footer-title">Ready to Transform Your Content Strategy?</h3>
+            <p class="footer-subtitle">Join thousands of companies already using Tiation CMS</p>
             <div class="footer-links">
-                <a href="https://tiation.github.io/tiation-cms" class="footer-link">Home</a>
-                <a href="https://tiation.github.io/tiation-cms/features.html" class="footer-link">Features</a>
-                <a href="https://tiation.github.io/tiation-cms/about.html" class="footer-link">About</a>
-                <a href="https://tiation.github.io/tiation-cms/demo.html" class="footer-link">Demo</a>
-                <a href="https://github.com/tiation/tiation-cms" class="footer-link">GitHub</a>
-                <a href="https://github.com/tiation/tiation-cms/wiki" class="footer-link">Documentation</a>
+                <a href="https://github.com/tiation/tiation-cms" class="footer-link">GitHub Repository</a>
+                <a href="https://github.com/tiation/tiation-cms/blob/main/README.md" class="footer-link">Documentation</a>
+                <a href="demo.html" class="footer-link">Live Demo</a>
+                <a href="https://github.com/tiation/tiation-cms/issues" class="footer-link">Support</a>
+                <a href="https://github.com/tiation" class="footer-link">Tiation Ecosystem</a>
             </div>
-            <p>&copy; 2025 Tiation CMS. All rights reserved.</p>
-            <p>Built with 💜 by the Tiation team</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tiation. Building the future of content management.</p>
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        // Enhanced scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
 </body>
 </html>
